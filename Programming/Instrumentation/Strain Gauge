@@ -10,3 +10,6 @@ Change the file path to home/pi/Desktop/Serial output/StrainGauge.log
 ****NOTE: All of this is saved under the StrainGauge configuration so you dont have to do it every time.****
 When you click run, overwrite the data, or append depending on what you want to store. We will usually overwrite this data.
 Once the run is complete head to that folder on the desktop and click on that file to get the data. Keep note of the rate of which it collects data as that is going to be your time variable
+
+To calibrate the equiment simply hit x, then hit the key for tare, then calibrate, and input the known weight that is being applied, and thats it. Its simple and straight forward.
+MAKE SURE TO TARE BEFORE EVERY TEST
