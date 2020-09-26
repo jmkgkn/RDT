@@ -1,5 +1,5 @@
 Strain Gauge is actually really simple to use.
-Simply create a wheatstone bridge, and connect it to an OpenScale Board. For out system, its (wires) Red to e+, Yellow to e-, Red to a-, and Black to a+.
+Simply create a wheatstone bridge, and connect it to an OpenScale Board. For out system, its (wires) Red to e+, Yellow to e-, white to a-, and Black to a+.
 Once you have it connected plug it into the bottom left port on the pi.
 Open putty (pi symbol, run, putty)
 On the first page click serial for connection type
