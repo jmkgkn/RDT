@@ -1,0 +1,6 @@
+See strain gauge document for similar info.
+
+Changes between the two will be the following
+Wireing order (undertermined)
+The configuration in putty is the LoadCell configuration.
+The file where the data is stored is the LoadCell file in the same folder.
