@@ -1,0 +1,4 @@
+For instrumentation we will do the following.
+
+The test stand pi will connect to the ground station pi over rdc. Connect both to the router and rdc from ground station to test stand.
+When in the test stand pi, to gather data from both the load cell and straing gauges you need to open two different instances of putty, each with their own respective configuration.
