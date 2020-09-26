@@ -2,3 +2,8 @@ For instrumentation we will do the following.
 
 The test stand pi will connect to the ground station pi over rdc. Connect both to the router and rdc from ground station to test stand.
 When in the test stand pi, to gather data from both the load cell and straing gauges you need to open two different instances of putty, each with their own respective configuration.
+Thermocouples will also need its own putty instance.
+
+Connection order is as follows. strain gauge->bottom left usb, loadcell->bottom right usb, thermocoupels->top right usb.
+
+For rdc (remote desktop connection) simply plug both pi's into the router, find the ip of the test stand pi (should only need to do this once and it is this {}) and then connect with the rdc program {}.
