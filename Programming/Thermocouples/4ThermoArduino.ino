@@ -1,3 +1,4 @@
+  
   //4Thermo_Arduino Program
   //Program for read data off 4 adafruit Max31856 and print the data on an SD card reader
   //The program uses Pins 2,3,4,5,6,7,8 Digital pins for the thermocouples
@@ -47,6 +48,8 @@ void setup() {
   ThermoData = SD.open("Thermo.txt", FILE_WRITE);
   ThermoData.println("Thermo Data: Time, 1, 2, 3, 4");
   ThermoData.close();
+//Begins serial output at 9600 baud
+  Serial.begin(9600);
 }
 
 void loop() {
@@ -60,14 +63,30 @@ void loop() {
   //Temp for Thermocouple 1 (C)
   ThermoData.print(maxthermo1.readThermocoupleTemperature());
   ThermoData.print("            ");
+  Serial.print(maxthermo1.readThermocoupleTemperature());
+  Serial.print(" Time:");
+  Serial.print(millis());
+  Serial.print("ms | ");
   //Temp for Thermocouple 2 (C)
   ThermoData.print(maxthermo2.readThermocoupleTemperature());
   ThermoData.print("            ");
+  Serial.print(maxthermo2.readThermocoupleTemperature());
+  Serial.print(" Time:");
+  Serial.print(millis());
+  Serial.print("ms | ");
   //Temp for Thermocouple 3 (C)
   ThermoData.print(maxthermo3.readThermocoupleTemperature());
   ThermoData.print("            ");
+  Serial.print(maxthermo3.readThermocoupleTemperature());
+  Serial.print(" Time:");
+  Serial.print(millis());
+  Serial.print("ms | ");
   //Temp for Thermocouple 4 (C)
   ThermoData.println(maxthermo4.readThermocoupleTemperature());
+  Serial.print(maxthermo4.readThermocoupleTemperature());
+  Serial.print(" Time:");
+  Serial.print(millis());
+  Serial.println("ms | ");
   //Delay for each data point
   delay(500);
 
