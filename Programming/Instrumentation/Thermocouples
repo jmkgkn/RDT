@@ -1,0 +1,4 @@
+See strain gauges for similar setup instructions.
+The port you plug into is the top right usb port.
+Simply open putty and load the thermocouples configuration.
+Info will be stored to the respective file in the intrumentation folder.
